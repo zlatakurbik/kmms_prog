@@ -7,7 +7,7 @@ namespace zlata {
 		
 		const MenuItem* parent;
 		
-		const MenuItem* const* history;
-		const int history_count;
+		const MenuItem* const *children;
+		const int children_count;
 	};
 }
