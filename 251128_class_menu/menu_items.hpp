@@ -4,6 +4,9 @@
 
 namespace zlata {
 	extern const MenuItem MAIN;
+	extern const MenuItem MAIN_MENU;
+	extern const MenuItem SECOND_MENU;
+	extern const MenuItem THIRD_MENU;
 	
 	extern const MenuItem RUSSIAN_ART;
 	extern const MenuItem EXIT;

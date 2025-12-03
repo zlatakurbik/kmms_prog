@@ -32,7 +32,7 @@ namespace {
 
 
 const zlata::MenuItem zlata::ART = {
-	"1 - Русские художники", zlata::show_menu, &zlata::RUSSIAN_ART, art_children, art_size
+	"1 - Русские художники", zlata::show_third_menu, &zlata::RUSSIAN_ART, art_children, art_size
 };
 
 const zlata::MenuItem zlata::MUSIC = {
@@ -53,7 +53,7 @@ namespace {
 }
 
 const zlata::MenuItem zlata::RUSSIAN_ART = {
-	"1 - Искусство России", zlata::show_menu, &zlata::MAIN, russian_art_children, russian_art_size
+	"1 - Искусство России", zlata::show_second_menu, &zlata::MAIN, russian_art_children, russian_art_size
 };
 const zlata::MenuItem zlata::EXIT = {
 	"0 - Выйти", zlata::exit, &zlata::MAIN
@@ -68,6 +68,17 @@ namespace {
 }
 
 const zlata::MenuItem zlata::MAIN = {
-	nullptr, zlata::show_menu, nullptr, main_children, main_size
+	nullptr, zlata::show_main_menu, nullptr, main_children, main_size
 };
 
+const zlata::MenuItem zlata::MAIN_MENU = {
+	nullptr, zlata::show_main_menu, nullptr, main_children, main_size
+};
+
+const zlata::MenuItem zlata::SECOND_MENU = {
+	nullptr, zlata::show_second_menu, nullptr, main_children, main_size
+};
+
+const zlata::MenuItem zlata::THIRD_MENU = {
+	nullptr, zlata::show_third_menu, nullptr, main_children, main_size
+};
